@@ -20,6 +20,17 @@ header {
     top: 0;
      z-index: 1000;      /* para que quede por encima del contenido */
 }
+header img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    background-color: #a200ff;
+    transition: transform 0.6s ease;
+}
+header img:hover{
+    box-shadow: 2px  2px 2px 2px #ff0000;
+    transform:  translateY(-5px) scale(1.2);
+}
 
 /* El <nav> contendrá los enlaces y el título */
 nav {
@@ -147,6 +158,7 @@ section h2 {
     margin-left: 20px;
     margin-right: 20px;
     transition: transform 0.5s ease;
+    border-radius: 2rem;
 }
 .proyecto-card:hover{
     box-shadow: 6px 6px 6px  #0f0f0f;
@@ -246,6 +258,7 @@ button:hover {
 /* Hover: la card crece un poco para destacar */
 .animal:hover {
     transform: scale(1.03);              /* Crece 3% */
+    box-shadow: 6px 6px 6px #333;
 }
 
 /* Imagen dentro de cada card */
@@ -266,7 +279,7 @@ button:hover {
 .cautiverio{
     grid-template-columns: repeat(3, 1fr);
     display: grid;
-    gap: 10px;
+    gap: 30px;
     box-shadow: 12px 12px 12px #00000083;
 }
 .cautiverio h2{
